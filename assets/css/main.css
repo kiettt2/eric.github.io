@@ -1681,4 +1681,13 @@ input, select, textarea {
 			background-color: #555;
 		}
 
+		article h2 {
+			margin-top: 50px; /* Hoặc bạn có thể thay đổi giá trị tùy ý */
+		}
+	
+		article p,
+		article ul {
+			margin-bottom: 10px; /* Hoặc bạn có thể thay đổi giá trị tùy ý */
+		}
+
 		
