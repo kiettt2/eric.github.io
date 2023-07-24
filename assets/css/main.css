@@ -1681,13 +1681,13 @@ input, select, textarea {
 			background-color: #555;
 		}
 
+		article p,ul {
+			margin-bottom: 30px; /* Hoặc bạn có thể thay đổi giá trị tùy ý */
+		  }
+		
 		article h2 {
-			margin-top: 50px; /* Hoặc bạn có thể thay đổi giá trị tùy ý */
-		}
-	
-		article p,
-		article ul {
-			margin-bottom: 10px; /* Hoặc bạn có thể thay đổi giá trị tùy ý */
-		}
+			margin-top: 40px; /* Hoặc bạn có thể thay đổi giá trị tùy ý */
+			margin-bottom: 20px; /* Hoặc bạn có thể thay đổi giá trị tùy ý */
+		  }
 
 		
