@@ -1690,4 +1690,34 @@ input, select, textarea {
 			margin-bottom: 20px; /* Hoặc bạn có thể thay đổi giá trị tùy ý */
 		  }
 
-		
+		.cursor {
+			display: inline-block;
+			width: 8px;
+			height: 18px;
+			background-color: #000;
+			animation: blinkCursor 0.7s infinite;
+		}
+	
+		span {
+			display: block;
+			font-family: monospace;
+			white-space: nowrap;
+			border-right: 2px solid;
+			width: 100%;
+  			max-width: 100ch; /* Đặt chiều rộng tối đa là 100 ký tự */
+		   
+			animation: typing 1s steps(13), blink 0.5s ;
+			overflow: hidden;
+		  }
+		   
+		  @keyframes typing {
+			from {
+			  width: 0;
+			}
+		  }
+		   
+		  @keyframes blink {
+			50% {
+			  border-color: transparent;
+			}
+		  }
