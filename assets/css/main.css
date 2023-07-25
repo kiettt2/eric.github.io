@@ -1705,7 +1705,7 @@ input, select, textarea {
 			border-right: 2px solid;
 			width: 100%;
 		   
-			animation: typing 1s steps(13), blink 0.5s ;
+			animation: typing 3s steps(21), blink 0.5s ;
 			overflow: hidden;
 		  }
 		   
