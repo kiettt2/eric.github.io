@@ -1704,7 +1704,7 @@ input, select, textarea {
 			white-space: nowrap;
 			border-right: 2px solid;
 			width: 100%;
-		   
+
 			animation: typing 3s steps(21), blink 0.5s ;
 			overflow: hidden;
 		  }
@@ -1720,6 +1720,25 @@ input, select, textarea {
 			  border-color: transparent;
 			}
 		  }
+
+		/* Responsive Styles */
+		@media screen and (max-width: 768px) {
+			h1{
+				font-size: 2rem;
+			}
+			p {
+				font-size: 1.5rem;
+			}
+		}
+
+		@media screen and (max-width: 480px) {
+			h1{
+				font-size: 1rem;
+			}
+			p {
+				font-size: 0.5rem;
+			}
+		}
 
 		.fading-text {
             opacity: 0; /* Mặc định là ẩn */
