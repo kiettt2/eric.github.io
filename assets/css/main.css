@@ -1704,7 +1704,6 @@ input, select, textarea {
 			white-space: nowrap;
 			border-right: 2px solid;
 			width: 100%;
-  			max-width: 100ch; /* Đặt chiều rộng tối đa là 100 ký tự */
 		   
 			animation: typing 1s steps(13), blink 0.5s ;
 			overflow: hidden;
@@ -1721,3 +1720,47 @@ input, select, textarea {
 			  border-color: transparent;
 			}
 		  }
+
+		.fading-text {
+            opacity: 0; /* Mặc định là ẩn */
+            animation: fadeIn 2s ease forwards; /* Sử dụng animation fadeIn trong 2s và giữ giá trị cuối cùng */
+        }
+
+        /* Định nghĩa animation */
+        @keyframes fadeIn {
+            100% {
+                opacity: 1; /* Hiển thị cuối cùng của animation */
+            }
+        }
+
+		.slide-in-text-left-to-right {
+            overflow: hidden; /* Ẩn văn bản dư thừa */
+            white-space: nowrap; /* Ngăn văn bản xuống dòng */
+            animation: slideInLefttoRight 2s ease; /* Sử dụng animation slideIn trong 2s */
+        }
+
+        /* Định nghĩa animation */
+        @keyframes slideInLefttoRight {
+            from {
+                transform: translateX(-100%); /* Chữ xuất hiện từ vị trí ngoài cùng bên trái */
+            }
+            to {
+                transform: translateX(0); /* Di chuyển chữ về vị trí hiển thị bình thường */
+            }
+        }
+
+		.slide-in-text-right-to-left {
+			overflow: hidden; /* Ẩn văn bản dư thừa */
+            white-space: nowrap; /* Ngăn văn bản xuống dòng */
+            animation: slideInRighttoLeft 2s forwards; /* Sử dụng animation slideIn trong 2s và giữ giá trị cuối cùng */
+        }
+
+        /* Định nghĩa animation */
+        @keyframes slideInRighttoLeft {
+			from {
+                transform: translateX(100%); /* Chữ xuất hiện từ vị trí ngoài cùng bên phải */
+            }
+            to {
+                transform: translateX(0); /* Di chuyển chữ về vị trí hiển thị bình thường */
+            }
+        }
